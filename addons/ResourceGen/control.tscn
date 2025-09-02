@@ -1,0 +1,91 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp175j04x8w32"]
+
+[ext_resource type="Script" uid="uid://bu4vvyb08fqvq" path="res://addons/ResourceGen/DockBaseControl.cs" id="1_3gdy1"]
+
+[node name="Resource Gen" type="Control" node_paths=PackedStringArray("GenerateButton", "ConfigMenuButton", "RefreshProvidersButton", "ProviderContainer")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_3gdy1")
+GenerateButton = NodePath("VBoxContainer/HBoxContainer/Button")
+ConfigMenuButton = NodePath("VBoxContainer/HBoxContainer/MenuButton")
+RefreshProvidersButton = NodePath("VBoxContainer/ScrollContainer/PanelContainer/ProviderNameContainer/HBoxContainer/Button2")
+ProviderContainer = NodePath("VBoxContainer/ScrollContainer/PanelContainer/ProviderNameContainer")
+metadata/_custom_type_script = "uid://bu4vvyb08fqvq"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+clip_contents = true
+layout_mode = 0
+offset_right = 275.0
+offset_bottom = 435.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Detect and run Resource Generators."
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "Run All Generators"
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="MenuButton" type="MenuButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Configure..."
+flat = false
+item_count = 1
+popup/item_0/text = "Regenerate Config File"
+popup/item_0/id = 0
+
+[node name="Panel" type="Panel" parent="VBoxContainer/HBoxContainer/MenuButton"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 97.0
+offset_bottom = 31.0
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="VBoxContainer/ScrollContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="ProviderNameContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/PanelContainer/ProviderNameContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/PanelContainer/ProviderNameContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = " All Generators:"
+vertical_alignment = 2
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/ScrollContainer/PanelContainer/ProviderNameContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="VBoxContainer/ScrollContainer/PanelContainer/ProviderNameContainer/HBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "⟲"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/PanelContainer/ProviderNameContainer"]
+layout_mode = 2
