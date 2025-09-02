@@ -13,3 +13,6 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# OS-specific ignores
+resource-gen-api.sln.DotSettings.user
