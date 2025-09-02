@@ -1,4 +1,4 @@
-﻿# Godot Resource Generation Framework
+﻿# Godot Resource Generation Framework ![ResourcePreloader](https://github.com/user-attachments/assets/54f3f20f-8e43-4b2c-b703-b1017865b290)<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160"><path fill="#e0e0e0" d="M1.553 4.104A1 1 0 0 0 1 4.998v6a1 1 0 0 0 .553.895l6 3a1 1 0 0 0 .894 0l6-3a1 1 0 0 0 .553-.895v-6a1 1 0 0 0-.553-.894l-6-3a1 1 0 0 0-.894 0zM8 3.119 11.764 5l-1.381.692-3.764-1.883L8 3.119zm-5 3.5 4 2v3.764l-4-2zm10 0v3.764l-4 2V8.619z"/></svg>
 
 This is an editor plugin for Godot 4.4 in C# that provides a framework 
 for generating and managing resources in your Godot projects. 
@@ -86,3 +86,6 @@ enabling or disabling saving log files.
 ## Contributing
 Contributions are welcome! If you find a bug or have a feature request, please open an issue here on GitHub.
 Feel free to fork the repository and submit a pull request with your changes.
+Happy Generating!
+
+<img width="64" height="64" alt="ResourcePreloader" src="https://github.com/user-attachments/assets/bd262459-31f2-4da9-b249-6e7f8daf137e" />
