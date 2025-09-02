@@ -86,3 +86,6 @@ enabling or disabling saving log files.
 ## Contributing
 Contributions are welcome! If you find a bug or have a feature request, please open an issue here on GitHub.
 Feel free to fork the repository and submit a pull request with your changes.
+Happy Generating!
+
+<img width="64" height="64" alt="ResourcePreloader" src="https://github.com/user-attachments/assets/bd262459-31f2-4da9-b249-6e7f8daf137e" />
