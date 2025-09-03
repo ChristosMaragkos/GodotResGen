@@ -6,6 +6,8 @@
     <ImplicitUsings>disable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include="addons\ResourceGen\LICENSE.md" />
     <Content Include="addons\ResourceGen\ResourcePreloader.png" />
   </ItemGroup>
 </Project>
